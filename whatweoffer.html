@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>What We Offer | GRG Poly Dynamics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .technical-grid {
+            background-image: radial-gradient(circle, #D1D9E0 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .hero-clip {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "surface": "#f7f9fc",
+                        "surface-variant": "#e0e3e6",
+                        "inverse-surface": "#2d3133",
+                        "surface-container-highest": "#e0e3e6",
+                        "primary-fixed-dim": "#b5c7ea",
+                        "inverse-primary": "#b5c7ea",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#364764",
+                        "primary-container": "#0b1f3a",
+                        "inverse-on-surface": "#eff1f4",
+                        "on-primary-fixed": "#071c36",
+                        "outline-variant": "#c4c6ce",
+                        "on-background": "#191c1e",
+                        "on-surface-variant": "#44474d",
+                        "on-tertiary-container": "#a87e59",
+                        "on-surface": "#191c1e",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e6e8eb",
+                        "tertiary-container": "#321800",
+                        "tertiary": "#0d0400",
+                        "surface-bright": "#f7f9fc",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#7587a7",
+                        "surface-dim": "#d8dadd",
+                        "on-secondary-container": "#295782",
+                        "background": "#f7f9fc",
+                        "secondary-fixed": "#d0e4ff",
+                        "surface-container": "#eceef1",
+                        "tertiary-fixed": "#ffdcc1",
+                        "on-secondary-fixed": "#001d35",
+                        "secondary-container": "#a2cdff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#2e1500",
+                        "secondary": "#35618d",
+                        "primary": "#000615",
+                        "outline": "#75777e",
+                        "on-secondary-fixed-variant": "#174974",
+                        "on-tertiary-fixed-variant": "#613f20",
+                        "surface-tint": "#4d5f7d",
+                        "secondary-fixed-dim": "#9fcafc",
+                        "surface-container-low": "#f2f4f7",
+                        "tertiary-fixed-dim": "#eebd94",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#d6e3ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "max-width": "1280px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "xl": "80px",
+                        "md": "24px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "sm": "12px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Montserrat"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<nav class="sticky top-0 w-full z-50 bg-surface-container-lowest dark:bg-primary-container border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-max-width mx-auto">
+<a href="home.html" class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed no-underline hover:opacity-80 transition-opacity">
+                GRG Poly Dynamics
+            </a>
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="home.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="expertise.html">Expertise</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-secondary dark:border-secondary-container pb-1" href="whatweoffer.html">Offerings</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Infrastructure</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Reports</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Gallery</a>
+</div>
+<div class="flex items-center gap-md">
+<button class="bg-primary text-on-primary px-md py-sm rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity active:scale-95 duration-200 hidden md:inline-block">
+                Enquire Now
+            </button>
+<button id="mobile-menu-btn" class="md:hidden text-primary p-xs" onclick="document.getElementById('mobile-menu').classList.toggle('translate-x-full')">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] translate-x-full transition-transform duration-300 md:hidden">
+<div class="absolute inset-0 bg-black/50" onclick="document.getElementById('mobile-menu').classList.add('translate-x-full')"></div>
+<div class="absolute right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-2xl p-lg flex flex-col">
+<div class="flex justify-between items-center mb-xl">
+<span class="font-headline-md text-headline-md font-bold text-primary">Menu</span>
+<button onclick="document.getElementById('mobile-menu').classList.add('translate-x-full')">
+<span class="material-symbols-outlined text-on-surface">close</span>
+</button>
+</div>
+<nav class="flex flex-col space-y-md">
+<a class="font-label-md text-label-md text-on-surface-variant border-b border-outline-variant pb-sm hover:text-secondary transition-colors" href="home.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant border-b border-outline-variant pb-sm hover:text-secondary transition-colors" href="expertise.html">Expertise</a>
+<a class="font-label-md text-label-md text-primary border-b border-outline-variant pb-sm" href="whatweoffer.html">Offerings</a>
+<a class="font-label-md text-label-md text-on-surface-variant border-b border-outline-variant pb-sm hover:text-secondary transition-colors" href="#">Infrastructure</a>
+<a class="font-label-md text-label-md text-on-surface-variant border-b border-outline-variant pb-sm hover:text-secondary transition-colors" href="#">Reports</a>
+<a class="font-label-md text-label-md text-on-surface-variant border-b border-outline-variant pb-sm hover:text-secondary transition-colors" href="#">Gallery</a>
+</nav>
+<button class="bg-primary text-on-primary px-lg py-sm font-label-md text-label-md rounded mt-auto hover:bg-on-primary-fixed-variant active:scale-95 transition-all">
+Enquire Now
+</button>
+</div>
+</div>
+<!-- Hero Section -->
+<header class="relative bg-primary-container text-on-primary py-xl overflow-hidden hero-clip">
+<div class="absolute inset-0 opacity-10 technical-grid"></div>
+<div class="relative px-margin-desktop max-w-max-width mx-auto grid md:grid-cols-2 gap-lg items-center">
+<div class="space-y-md">
+<span class="inline-block px-sm py-xs bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm">
+                    PRECISION CAPABILITIES
+                </span>
+<h1 class="font-display-lg text-display-lg leading-tight">Comprehensive Polymer Engineering Solutions</h1>
+<p class="font-body-lg text-body-lg opacity-80 max-w-lg">
+                    From conceptual design to high-volume production, we provide vertically integrated manufacturing services that meet global aerospace and automotive standards.
+                </p>
+<div class="flex gap-md pt-base">
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-lg py-sm rounded-lg font-label-md text-label-md hover:bg-tertiary-fixed-dim transition-all">
+                        Request Capabilities PDF
+                    </button>
+</div>
+</div>
+<div class="relative hidden md:block">
+<img alt="Advanced Manufacturing" class="rounded-xl shadow-2xl border border-outline-variant/20" data-alt="A high-precision industrial robotic arm performing intricate assembly on a clean, modern manufacturing floor. The lighting is cool-toned and professional, highlighting the metallic textures and technological sophistication of the facility. The composition is dynamic, emphasizing speed and accuracy within a pristine industrial environment of the GRG Poly Dynamics brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeOSR2O91U8Jdr18zbSJVekGHqmZm1O-YiBzW0xeZvE1bdwiEl0_V8KSy0mZ0GjFgoF_SJTtj_IWoS736_WHl-cEIxEHkaO0mTtpRgCoys7gpja-1AoXu1SsjZStMEfDvcIyHwFwMn_nCqsp3dJDNKyNpY1mxBEimdfLDjg5M3wHuabZeLlj5OhXiDioQwKTBay9fHCywT52rvsxvrdSrvEV_zT16sxewU8zLtP0W61T1M8QCbrZrQzlRNXH5-PIEJ-U9Z0cdj_4c"/>
+</div>
+</div>
+</header>
+<!-- Service Blocks: Bento Grid Style -->
+<section class="py-xl px-margin-desktop max-w-max-width mx-auto">
+<div class="mb-lg space-y-base">
+<h2 class="font-headline-lg text-headline-lg text-primary">Core Engineering Offerings</h2>
+<div class="w-20 h-1.5 bg-secondary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Block: Product Development -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+<div class="grid md:grid-cols-2 h-full">
+<div class="p-lg flex flex-col justify-center">
+<div class="mb-md">
+<span class="material-symbols-outlined text-secondary text-[40px]" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm">Product Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">
+                            Our engineering team utilizes advanced CAD/CAM/CAE software to transform complex requirements into manufacture-ready specifications.
+                        </p>
+<ul class="space-y-xs font-label-md text-label-md text-primary">
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span> Design for Manufacturing (DFM)</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span> FEA &amp; Mold Flow Analysis</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span> Material Selection Engineering</li>
+</ul>
+</div>
+<div class="relative h-64 md:h-auto overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of a high-resolution engineering workstation showing a complex 3D polymer part model in CAD software. The environment is a professional, well-lit engineering office with technical diagrams in the background. The aesthetic is clean, technical, and high-contrast, featuring the Navy and Steel Blue palette of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3_uHw7BPwZUqgWrrUdmxY3-GXnwN8btfWrpE1Bzmh4ydnr01nioQr6WyEW8lXAidtOG-_4qHiIAS6j2-Qc19jaDeSsBaS71DJbcXyvLTWua2P7-jaVlvb8peW6I4sDkRzhZsyXTdgPtDO2SZJQOTNQSuDbu2jsqVZJWI2LQIuKaoGoS9ktP23DCXVJEq-iyR6wh5HXl8boSK9MXggYC-qPIABm0r2xBgsME6PeFPaD6R-0UGYeJeq8NtqxfOe4k63SMO8nLDy8TE"/>
+</div>
+</div>
+</div>
+<!-- Block: Prototyping -->
+<div class="md:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col group hover:shadow-lg transition-shadow duration-300">
+<div class="mb-md">
+<span class="material-symbols-outlined text-secondary text-[40px]" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm">Prototyping</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Rapid iteration via 3D printing and soft-tooling to validate form, fit, and function before mass production.
+                </p>
+<div class="mt-lg pt-md border-t border-outline-variant">
+<span class="font-label-md text-label-md text-secondary group-hover:gap-base flex items-center gap-xs transition-all">
+                        Learn More <span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Block: Mould Making -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-lg flex flex-col group hover:bg-primary-container transition-colors duration-300">
+<div class="mb-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[40px]" data-icon="settings_input_component">settings_input_component</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm">Mould Making</h3>
+<p class="font-body-md text-body-md opacity-80 flex-grow">
+                    In-house tool room equipped with 5-axis CNC machines for high-precision multi-cavity injection moulds.
+                </p>
+<div class="mt-lg pt-md border-t border-on-primary-fixed-variant">
+<div class="flex flex-wrap gap-xs">
+<span class="px-xs py-[2px] bg-white/10 rounded text-[10px] font-label-sm uppercase">Tolerance ±0.005mm</span>
+</div>
+</div>
+</div>
+<!-- Large Block: Plastic Part Production -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+<div class="grid md:grid-cols-2 h-full">
+<div class="relative h-64 md:h-auto overflow-hidden order-2 md:order-1">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A row of automated injection molding machines in a bright, modern factory setting. The machines are pristine, with digital control panels glowing. The floor is polished concrete reflecting the bright industrial lighting. The scene represents mass production capability with technical authority and industrial efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDtfTpRR5FxsXHSYfoSAf4ZXhSAE0ePboWzqy3dkq6LCv83TDU0vis5LvmMSdBhZjhATJ3f-RLra6uFWKLvTV8AB3giRvGp8n-07M2OURCHv_K7qK94PZfkbQJWGgUIMVqU0obE2zF3v1OrIRNf4EUN02ZqhpubpEDO86QlFlOgNRb0jANjzXIK_-9aKYt3Zq6I2kptT5ED0V-B83wWsxWuJ287FO3NIe4bB8v_3Yy9Mvs1DU9m4d_oh2LinET-sIBE27a3aRIDPE"/>
+</div>
+<div class="p-lg flex flex-col justify-center order-1 md:order-2">
+<div class="mb-md">
+<span class="material-symbols-outlined text-secondary text-[40px]" data-icon="factory">factory</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm">Part Production</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">
+                            Equipped with machines ranging from 50T to 1200T for high-volume injection molding across diverse polymer grades.
+                        </p>
+<div class="grid grid-cols-2 gap-sm">
+<div class="bg-surface-container-low p-sm rounded border border-outline-variant">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Capacity</p>
+<p class="font-headline-md text-headline-md text-primary">2.4M+</p>
+<p class="font-label-sm text-label-sm">Units/Month</p>
+</div>
+<div class="bg-surface-container-low p-sm rounded border border-outline-variant">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Quality</p>
+<p class="font-headline-md text-headline-md text-primary">6 Sigma</p>
+<p class="font-label-sm text-label-sm">Standards</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Block: Finishing Services -->
+<div class="md:col-span-12 bg-tertiary-container text-on-tertiary-container rounded-xl p-lg flex flex-col md:flex-row items-center gap-lg border border-on-tertiary-container/20">
+<div class="flex-shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container text-[64px]" data-icon="brush">brush</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-md text-headline-md mb-sm">Advanced Finishing Services</h3>
+<p class="font-body-md text-body-md opacity-90 max-w-3xl">
+                        Comprehensive post-processing including ultrasonic welding, laser etching, painting, and sub-assembly. We deliver ready-to-use components directly to your production line.
+                    </p>
+</div>
+<div class="flex-shrink-0">
+<button class="border-2 border-on-tertiary-container px-lg py-sm rounded-lg font-label-md text-label-md hover:bg-on-tertiary-container hover:text-tertiary-container transition-all">
+                        View Surface Catalog
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Process Section -->
+<section class="bg-surface-container-high py-xl relative">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Our Engineering Workflow</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                    A rigorous 4-step process designed to ensure technical compliance and zero-defect manufacturing.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<!-- Decorative Connector Line -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-outline-variant z-0"></div>
+<!-- Process Card 1 -->
+<div class="relative z-10 bg-white border border-outline-variant p-lg rounded-xl text-center space-y-md group hover:border-secondary transition-colors">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto font-headline-md text-headline-md shadow-lg group-hover:scale-110 transition-transform">
+                        01
+                    </div>
+<h4 class="font-headline-md text-headline-md text-primary">Audit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        Review of technical drawings, material compatibility, and tolerance requirements.
+                    </p>
+</div>
+<!-- Process Card 2 -->
+<div class="relative z-10 bg-white border border-outline-variant p-lg rounded-xl text-center space-y-md group hover:border-secondary transition-colors">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto font-headline-md text-headline-md shadow-lg group-hover:scale-110 transition-transform">
+                        02
+                    </div>
+<h4 class="font-headline-md text-headline-md text-primary">Simulation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        Advanced mold flow simulation to predict warpage, weld lines, and cycle times.
+                    </p>
+</div>
+<!-- Process Card 3 -->
+<div class="relative z-10 bg-white border border-outline-variant p-lg rounded-xl text-center space-y-md group hover:border-secondary transition-colors">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto font-headline-md text-headline-md shadow-lg group-hover:scale-110 transition-transform">
+                        03
+                    </div>
+<h4 class="font-headline-md text-headline-md text-primary">Validation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        Tool sampling (T1, T2) and CMM verification against master golden samples.
+                    </p>
+</div>
+<!-- Process Card 4 -->
+<div class="relative z-10 bg-white border border-outline-variant p-lg rounded-xl text-center space-y-md group hover:border-secondary transition-colors">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto font-headline-md text-headline-md shadow-lg group-hover:scale-110 transition-transform">
+                        04
+                    </div>
+<h4 class="font-headline-md text-headline-md text-primary">Scale</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        Transition to automated mass production with real-time quality monitoring.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-xl px-margin-desktop max-w-max-width mx-auto text-center">
+<div class="bg-surface-container-lowest border-2 border-primary p-xl rounded-xl relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<h2 class="font-display-lg text-display-lg text-primary mb-md">Ready to optimize your production?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-lg">
+                Our engineers are ready to review your project specifications and provide a detailed feasibility analysis within 48 hours.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-md">
+<button class="bg-primary text-on-primary px-xl py-md rounded font-label-md text-label-md hover:bg-primary-container transition-colors">
+                    Request a Technical Quote
+                </button>
+<button class="border-2 border-primary text-primary px-xl py-md rounded font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all">
+                    Speak with an Engineer
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-inverse-surface border-t border-on-primary-fixed-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-max-width mx-auto py-xl">
+<div class="col-span-1 md:col-span-1">
+<a href="home.html" class="font-headline-md text-headline-md font-bold text-on-primary mb-md block no-underline hover:opacity-80 transition-opacity">
+                    GRG Poly Dynamics
+                </a>
+<p class="font-body-sm text-body-sm text-on-primary-container opacity-80 mb-md">
+                    Precision engineering for the world's most demanding industries. Certified ISO 9001:2015.
+                </p>
+</div>
+<div class="space-y-sm">
+<h5 class="font-label-md text-label-md text-on-primary uppercase tracking-wider">Quick Links</h5>
+<ul class="space-y-xs">
+<li><a class="font-body-sm text-body-sm text-on-primary-container opacity-80 hover:text-tertiary-fixed transition-opacity" href="expertise.html">Expertise</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container opacity-80 hover:text-tertiary-fixed transition-opacity" href="#">Infrastructure</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container opacity-80 hover:text-tertiary-fixed transition-opacity" href="#">Gallery</a></li>
+</ul>
+</div>
+<div class="space-y-sm">
+<h5 class="font-label-md text-label-md text-on-primary uppercase tracking-wider">Governance</h5>
+<ul class="space-y-xs">
+<li><a class="font-body-sm text-body-sm text-on-primary-container opacity-80 hover:text-tertiary-fixed transition-opacity" href="#">Policy</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container opacity-80 hover:text-tertiary-fixed transition-opacity" href="#">Reports</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container opacity-80 hover:text-tertiary-fixed transition-opacity" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-sm">
+<h5 class="font-label-md text-label-md text-on-primary uppercase tracking-wider">Contact</h5>
+<div class="font-body-sm text-body-sm text-on-primary-container opacity-80">
+                    Plot No. 44, Industrial Area Phase II<br/>
+                    Global Tech Park, Bengaluru, India<br/>
+                    support@grgpolydynamics.com
+                </div>
+</div>
+</div>
+<div class="border-t border-on-primary-fixed-variant/20 py-md px-margin-desktop max-w-max-width mx-auto">
+<p class="font-label-sm text-label-sm text-on-primary-container opacity-60 text-center">
+                © 2024 GRG Poly Dynamics. Engineering Excellence.
+            </p>
+</div>
+</footer>
+</body></html>
