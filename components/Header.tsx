@@ -31,14 +31,15 @@ export default function Header() {
 
   return (
     <>
-      <header
-        className={`fixed top-0 w-full z-50 transition-all duration-300 border-b border-outline-variant ${
-          isScrolled
-            ? "h-16 bg-surface-container-high shadow-md"
-            : "h-20 bg-surface-container-lowest"
-        }`}
-      >
-        <div className="flex justify-between items-center h-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+      <div className={`fixed z-50 w-full transition-all duration-300 ${isScrolled ? "top-4 px-4" : "top-0 px-0"}`}>
+        <header
+          className={`mx-auto w-full max-w-max-width transition-all duration-300 ${
+            isScrolled
+              ? "h-16 bg-surface-container-lowest/70 backdrop-blur-md shadow-lg rounded-full border border-outline-variant/50 px-6 md:px-8"
+              : "h-20 bg-surface-container-lowest border-b border-outline-variant px-margin-mobile md:px-margin-desktop"
+          }`}
+        >
+          <div className="flex justify-between items-center h-full w-full">
           <Link
             href="/"
             className="font-headline-md text-[24px] font-bold text-primary no-underline hover:opacity-80 transition-opacity"
@@ -83,6 +84,7 @@ export default function Header() {
           </div>
         </div>
       </header>
+    </div>
 
       {/* Mobile Menu */}
       <AnimatePresence>
