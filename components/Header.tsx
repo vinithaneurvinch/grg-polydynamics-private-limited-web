@@ -39,35 +39,40 @@ export default function Header() {
               : "h-20 bg-surface-container-lowest/95 backdrop-blur-md border-b border-transparent px-margin-mobile md:px-margin-desktop"
           }`}
         >
-          <div className="flex justify-between items-center h-full w-full">
-            <div className="flex items-center gap-10">
-              <Link
-                href="/"
-                className="font-headline-md text-[22px] font-bold tracking-tight text-primary no-underline hover:opacity-80 transition-opacity"
-              >
-                GRG Poly Dynamics
-              </Link>
+          <div className="flex justify-between items-center h-full w-full relative">
+            <Link
+              href="/"
+              className="font-headline-md text-[22px] font-bold tracking-tight text-primary no-underline hover:opacity-80 transition-opacity z-10"
+            >
+              GRG Poly Dynamics
+            </Link>
 
-              {/* Desktop Nav */}
-              <nav className="hidden md:flex space-x-8">
-                {navLinks.map((link) => {
-                  const isActive = pathname === link.path;
-                  return (
-                    <Link
-                      key={link.name}
-                      href={link.path}
-                      className={`font-body-sm text-[14px] font-medium transition-colors duration-200 ${
-                        isActive
-                          ? "text-primary"
-                          : "text-on-surface-variant hover:text-primary"
-                      }`}
-                    >
-                      {link.name}
-                    </Link>
-                  );
-                })}
-              </nav>
-            </div>
+            {/* Desktop Nav - Centered */}
+            <nav className="hidden md:flex space-x-8 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+              {navLinks.map((link) => {
+                const isActive = pathname === link.path;
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.path}
+                    className={`relative font-body-sm text-[15px] transition-colors duration-200 py-1 ${
+                      isActive
+                        ? "text-blue-900 font-semibold"
+                        : "text-on-surface-variant font-medium hover:text-blue-900"
+                    }`}
+                  >
+                    {link.name}
+                    {isActive && (
+                      <motion.div
+                        layoutId="navIndicator"
+                        className="absolute -bottom-1 left-0 right-0 h-[2px] bg-blue-900 rounded-full"
+                        transition={{ type: "spring", stiffness: 350, damping: 30 }}
+                      />
+                    )}
+                  </Link>
+                );
+              })}
+            </nav>
 
             <div className="flex items-center gap-6">
               <Link
