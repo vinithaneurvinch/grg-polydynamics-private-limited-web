@@ -20,7 +20,7 @@ export default function InfrastructurePage() {
             <h1 className="font-display-lg text-[40px] md:text-[48px] mb-md leading-tight">
               State-of-the-Art <br />Manufacturing Infrastructure
             </h1>
-            <p className="font-body-lg text-[18px] opacity-80 max-w-lg leading-relaxed">
+            <p className="font-body-lg text-[18px] opacity-80 max-w-[500px] leading-relaxed">
               Our 50,000 sq.ft. facility houses the latest tech from Arburg, Engel, and Fanuc, operating with 24/7 uptime for maximum throughput and uncompromising quality.
             </p>
           </motion.div>

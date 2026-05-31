@@ -28,7 +28,7 @@ export default function AboutPage() {
             <h1 className="font-display-lg text-[40px] md:text-[48px] text-on-primary font-bold">
               Pioneering Polymer Excellence Since 1994.
             </h1>
-            <p className="font-body-lg text-[18px] text-on-primary-container max-w-xl leading-relaxed">
+            <p className="font-body-lg text-[18px] text-on-primary-container max-w-[600px] leading-relaxed">
               GRG Poly Dynamics represents the pinnacle of industrial polymer engineering. From our humble beginnings to becoming a global leader, we have remained committed to precision, innovation, and technical integrity.
             </p>
           </motion.div>

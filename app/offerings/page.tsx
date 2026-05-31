@@ -23,7 +23,7 @@ export default function OfferingsPage() {
             <h1 className="font-display-lg text-[40px] md:text-[48px] leading-tight">
               Comprehensive Polymer Engineering Solutions
             </h1>
-            <p className="font-body-lg text-[18px] opacity-80 max-w-lg leading-relaxed">
+            <p className="font-body-lg text-[18px] opacity-80 max-w-[500px] leading-relaxed">
               From conceptual design to high-volume production, we provide vertically integrated manufacturing services that meet global aerospace and automotive standards.
             </p>
           </motion.div>
